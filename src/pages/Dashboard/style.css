@@ -1,0 +1,80 @@
+#gradiente {
+  height: 50px;
+  background-color: black;
+  background-image: linear-gradient(
+    to right,
+    #5271ff 25%,
+    #ff1616 25%,
+    #ff1616 50%,
+    #008037 50%,
+    #008037 75%,
+    #e4c33e 75%,
+    #e4c33e
+  );
+}
+.FaixaR {
+  display: flex;
+  background-color: #5271ff;
+  height: 70px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.FaixaR h1 {
+  color: #fff;
+  height: 70px;
+}
+
+.FaixaB {
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+}
+
+.FaixaB button {
+  width: 300px;
+  height: 50px;
+  margin: 20px;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.FaixaB #Login {
+  background-color: #ff1616;
+}
+
+.FaixaB #Game {
+  background-color: #008037;
+}
+
+.FaixaT {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 800px;
+  text-align:center;
+}
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table tr:hover {
+  background-color: #ddd;
+}
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #e4c33e;
+}

@@ -1,6 +1,7 @@
-@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
 
 body {
   background: #eee;
-  font-family: 'Lily Script One';
+  font-family: 'Contrail One', cursive;
+  margin: 0;
 }
