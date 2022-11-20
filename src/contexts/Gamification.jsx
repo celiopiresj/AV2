@@ -2,22 +2,33 @@ import React, { createContext, useState, useEffect } from "react";
 
 const GamificationContext = createContext({});
 
-const XP_MOVE = 10;
+const XP_MOVE = 10
 const GamificationProvider = ({ children }) => {
-  const [xp, setXP] = useState(0);
-  const question = ""
-  
-  useEffect(() => {}, []);
 
-  const increaseXP = () => {
-    setXP(xp + XP_MOVE);
-  };
+    let [xp, setXP] = useState(0);
 
-  return (
-    <GamificationContext.Provider value={{ xp, increaseXP}}>
-      {children}
-    </GamificationContext.Provider>
-  );
+
+    useEffect(() => {
+
+    }, []);
+
+
+
+    const increaseXP = () => {
+        setXP(xp + XP_MOVE);
+    };
+
+    const zeroXP = () => {
+        setXP(xp = 0);
+    };
+
+
+
+    return (
+        <GamificationContext.Provider value={{ xp, increaseXP, zeroXP }}>
+            {children}
+        </GamificationContext.Provider>
+    );
 };
 
 export { GamificationContext, GamificationProvider };

@@ -22,7 +22,7 @@
 }
 
 .front,
-.back {
+.backfalse, .backtrue {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -35,8 +35,14 @@
     backface-visibility: hidden;
 }
 
-.back {
-    background: #5271ff;
+.backfalse {
+    background: #FF1616;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.backtrue {
+    background: #008037;
     color: white;
     transform: rotateY(180deg);
 }

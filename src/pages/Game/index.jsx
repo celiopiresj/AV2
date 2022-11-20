@@ -5,11 +5,21 @@ import { words } from "../../assets/words";
 import { useEffect, useState } from "react";
 import Xp from "../../components/Xp";
 import Question from "../../components/Question";
+
+
+
+import { GamificationContext } from "../../contexts/Gamification";
+import { useContext } from 'react';
+
+
 const TOTAL_CARDS = 6;
+
+export let Contador = 0
 
 export default function Game() {
   const navigate = useNavigate();
   const [cards, setCards] = useState([]);
+  const { zeroXP } = useContext(GamificationContext);
   
   useEffect(() => {
     let random = words.sort(() => Math.random() - 0.5);
@@ -37,6 +47,7 @@ export default function Game() {
         <button
           className="Ranking"
           onClick={() => {
+            zeroXP()
             navigate("/ranking");
           }}
         >
