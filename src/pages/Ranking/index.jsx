@@ -2,6 +2,10 @@ import { UsuarioContext } from "../../contexts/User";
 import "./style.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
+import { words } from "../../assets/words";
+
+let Questions = ""
+let NewWords = ""
 
 import {
   addDoc,
@@ -118,6 +122,9 @@ export default function Ranking() {
         <button
           className="Game"
           onClick={() => {
+           
+            NewWords = words.sort(() => Math.random() - 0.5);
+            Questions =  NewWords[0].ask
             navigate("/game");
           }}
         >
@@ -128,3 +135,5 @@ export default function Ranking() {
     </>
   );
 }
+
+export {Questions}

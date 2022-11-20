@@ -1,9 +1,10 @@
 import { useState } from 'react'
 
+import './style.css'
 import { GamificationContext } from "../../contexts/Gamification";
 import { useContext } from 'react';
+import { Questions } from '../../pages/Ranking';
 
-import './style.css'
 export default function Card({ content }) {
 
 
@@ -13,7 +14,7 @@ export default function Card({ content }) {
 
     const handleClick = () => {
         setIsOpened(true)
-        content.ask ==  "" ? increaseXP() : ""
+        content.ask == Questions ? increaseXP() : ""
     }
 
     return (
@@ -24,7 +25,7 @@ export default function Card({ content }) {
                 <div className="front">
                     {content.open}
                 </div>
-                
+              
                 <div className="back">
                     {content.hide}
                 </div>

@@ -5,8 +5,6 @@ import { words } from "../../assets/words";
 import { useEffect, useState } from "react";
 import Xp from "../../components/Xp";
 import Question from "../../components/Question";
-
-
 const TOTAL_CARDS = 6;
 
 export default function Game() {
@@ -25,9 +23,10 @@ export default function Game() {
         <div className="titulo">4LearnEnglish</div>
         <Xp total={80} />
       </div>
-      
-      <Question indice={5} />
 
+
+      <Question/>
+  
       <div id="caixa-cards">
         {cards.map((word, idx) => (
           <Card key={idx} content={word} />
