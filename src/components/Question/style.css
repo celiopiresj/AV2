@@ -1,0 +1,13 @@
+#Pergunta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 645px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #e4c33e;
+  }

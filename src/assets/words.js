@@ -1,30 +1,33 @@
 export let words = [
     {
-        open: 'Carro',
-        hide: 'Car'
+        open: 'another',
+        hide: 'outra',
+        ask: 'Yes, do you have this in __________ color?'
     },
     {
-        open: 'Gato',
-        hide: 'Cat'
+        open: 'how much',
+        hide: 'quanto',
+        ask: 'Can you tell me __________ this is.'
     },
     {
-        open: 'Vaca vaca vaca',
-        hide: 'Cow Cow Cow'
+        open: 'English',
+        hide: 'Inglês',
+        ask: 'No, I don’t speak __________.'
     },
     {
-        open: 'Pato',
-        hide: 'Duck'
+        open: 'I’m',
+        hide: 'Estou',
+        ask: '__________ just having a bad day'
     },
     {
-        open: 'Gato',
-        hide: 'Cat'
+        open: 'No thanks',
+        hide: 'Não, obrigado',
+        ask: '__________, I’m just browsing'
     },
     {
-        open: 'Vaca',
-        hide: 'Cow'
+        open: 'help',
+        hide: 'Ajudar',
+        ask: 'Can I __________ you?'
     },
-    {
-        open: 'Pato',
-        hide: 'Duck'
-    },
+   
 ]

@@ -1,9 +1,9 @@
 .card {
     position: relative;
-    width: 500px;
-    height: 300px;
+    width: 200px;
+    height: 100px;
     margin: 10px;
-    perspective: 500px;
+    perspective: 400px;
 }
 
 .content {
@@ -27,16 +27,16 @@
     height: 100%;
     width: 100%;
     background: white;
-    line-height: 300px;
-    color: #03446A;
+    line-height: 100px;
+    color: #5271ff;
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     border-radius: 5px;
     backface-visibility: hidden;
 }
 
 .back {
-    background: #03446A;
+    background: #5271ff;
     color: white;
     transform: rotateY(180deg);
 }

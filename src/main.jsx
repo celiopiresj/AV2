@@ -7,7 +7,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
 import { GamificationProvider } from "./contexts/Gamification"
 import { UsuarioProvider } from "./contexts/User"
 import Login from './pages/Login'
-import Dashboard from './pages/Dashboard'
+import Ranking from './pages/Ranking'
 import ProtectedRoutes from './pages/ProtectedRoutes'
 import "./services/firebase"
 
@@ -23,7 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
             <Route element={<ProtectedRoutes />}>
               <Route path={"game"} element={<Game />} />
-              <Route path={"dashboard"} element={<Dashboard />} />
+              <Route path={"ranking"} element={<Ranking />} />
             </Route>
 
           </Routes>

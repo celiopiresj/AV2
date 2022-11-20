@@ -18,18 +18,18 @@ import firebaseApp from "../../services/firebase";
 import { useEffect } from "react";
 import { async } from "@firebase/util";
 
-export default function Dashboard() {
+export default function Ranking() {
   const { signOut, user } = useContext(UsuarioContext);
 
   const navigate = useNavigate();
 
   return (
     <>
-      <div className="FaixaR">
-        <h1>Ranking</h1>
+      <div id="FaixaR">
+        <div className="titulo">Ranking</div>
       </div>
 
-      <div className="FaixaT">
+      <div id="FaixaT">
         <table>
           <thead>
             <tr>
@@ -41,61 +41,61 @@ export default function Dashboard() {
           </thead>
           <tbody>
           <tr>
-              <th scope="row">1</th>
+              <td>1º</td>
               <td>Mark</td>
               <td>350</td>
               <td>17/11/2022 23:40</td>
             </tr>
             <tr>
-              <th scope="row">2</th>
+              <td>2º</td>
               <td>Mark</td>
               <td>350</td>
               <td>17/11/2022 23:40</td>
             </tr>
             <tr>
-              <th scope="row">3</th>
+              <td>3º</td>
               <td>Mark</td>
               <td>350</td>
               <td>17/11/2022 23:40</td>
             </tr>
             <tr>
-              <th scope="row">4</th>
+              <td>4º</td>
               <td>Mark</td>
               <td>350</td>
               <td>17/11/2022 23:40</td>
             </tr>
             <tr>
-              <th scope="row">5</th>
+              <td>5º</td>
               <td>Mark</td>
               <td>350</td>
               <td>17/11/2022 23:40</td>
             </tr>
             <tr>
-              <th scope="row">6</th>
+              <td>6º</td>
               <td>Mark</td>
               <td>350</td>
               <td>17/11/2022 23:40</td>
             </tr>
             <tr>
-              <th scope="row">7</th>
+              <td>7º</td>
               <td>Mark</td>
               <td>350</td>
               <td>17/11/2022 23:40</td>
             </tr>
             <tr>
-              <th scope="row">8</th>
+              <td>8º</td>
               <td>Mark</td>
               <td>350</td>
               <td>17/11/2022 23:40</td>
             </tr>
             <tr>
-              <th scope="row">9</th>
+              <td>9º</td>
               <td>Jacob</td>
               <td>450</td>
               <td>17/11/2022 23:40</td>
             </tr>
             <tr>
-              <th scope="row">10</th>
+              <td>10º</td>
               <td>Jacob</td>
               <td>450</td>
               <td>17/11/2022 23:40</td>
@@ -104,9 +104,9 @@ export default function Dashboard() {
         </table>
       </div>
 
-      <div className="FaixaB">
+      <div id="FaixaB">
         <button
-          id="Login"
+          className="Login"
           onClick={() => {
             signOut();
             navigate("/login");
@@ -116,7 +116,7 @@ export default function Dashboard() {
         </button>
 
         <button
-          id="Game"
+          className="Game"
           onClick={() => {
             navigate("/game");
           }}

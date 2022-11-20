@@ -7,13 +7,13 @@ import './style.css'
 export default function Card({ content }) {
 
 
-    const { increaseXP, decreaseXP } = useContext(GamificationContext);
+    const { increaseXP } = useContext(GamificationContext);
 
     const [isOpened, setIsOpened] = useState(false)
 
     const handleClick = () => {
         setIsOpened(true)
-        Math.random() > 0.5 ? increaseXP() : decreaseXP()
+        content.ask ==  "" ? increaseXP() : ""
     }
 
     return (
@@ -24,6 +24,7 @@ export default function Card({ content }) {
                 <div className="front">
                     {content.open}
                 </div>
+                
                 <div className="back">
                     {content.hide}
                 </div>

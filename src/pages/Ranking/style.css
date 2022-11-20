@@ -1,37 +1,27 @@
-#gradiente {
-  height: 50px;
-  background-color: black;
-  background-image: linear-gradient(
-    to right,
-    #5271ff 25%,
-    #ff1616 25%,
-    #ff1616 50%,
-    #008037 50%,
-    #008037 75%,
-    #e4c33e 75%,
-    #e4c33e
-  );
-}
-.FaixaR {
+
+#FaixaR {
   display: flex;
   background-color: #5271ff;
-  height: 70px;
-  margin-top: 30px;
+  height: 90px;
   justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
-.FaixaR h1 {
+#FaixaR .titulo{
+  margin: 0;
   color: #fff;
-  height: 70px;
+  font-size: 40px;
+  height: 50px;
 }
 
-.FaixaB {
+#FaixaB {
   display: flex;
   justify-content: center;
-  margin: 10%;
+  margin: 5%;
 }
 
-.FaixaB button {
+#FaixaB button {
   width: 300px;
   height: 50px;
   margin: 20px;
@@ -42,15 +32,15 @@
   font-size: 15px;
 }
 
-.FaixaB #Login {
+#FaixaB .Login {
   background-color: #ff1616;
 }
 
-.FaixaB #Game {
+#FaixaB .Game {
   background-color: #008037;
 }
 
-.FaixaT {
+#FaixaT {
   display: flex;
   justify-content: center;
   margin: 20px;
@@ -77,4 +67,8 @@ table th {
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: #e4c33e;
+}
+
+table th[scope=row] {
+  background-color: #cac7c7;
 }

@@ -15,12 +15,11 @@ export default function Login() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (user) navigate("/dashboard");
+    if (user) navigate("/ranking");
   }, [user]);
 
   const handleClick = (e) => {
     signIn(email, password);
-    //navigate('/dashboard')
   };
 
   return (
