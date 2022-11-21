@@ -7,6 +7,7 @@ import Xp from "../../components/Xp";
 import Question from "../../components/Question";
 import Cronometro from "../../components/Cronometro";
 import { MudaEstado } from "../../components/Card";
+import { XP_MOVE } from "../../components/Card";
 
 import { GamificationContext } from "../../contexts/Gamification";
 import { useContext } from 'react';
@@ -48,6 +49,7 @@ export default function Game() {
           onClick={() => {
             zeroXP()
             MudaEstado()
+            {console.log(XP_MOVE)}
             navigate("/ranking");
           }}
         >

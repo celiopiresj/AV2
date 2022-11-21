@@ -11,6 +11,7 @@ let trava = 0
 
 export function MudaEstado(){
    trava = 0
+   XP_MOVE = 100
 }
 
 export default function Card({ content }) {
