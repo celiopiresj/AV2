@@ -37,14 +37,16 @@
     backface-visibility: hidden;
 }
 
-.backfalse {
-    background: #FF1616;
+.backfalse, .backtrue {
     color: white;
     transform: rotateY(180deg);
+    font-size: 17px;
+}
+
+.backfalse{
+    background: #FF1616;
 }
 
 .backtrue {
     background: #008037;
-    color: white;
-    transform: rotateY(180deg);
 }

@@ -62,7 +62,7 @@ export default function Card({ content }) {
       <div className="content">
         <div className="front">{content.open}</div>
 
-        <div className={style}>{content.hide}</div>
+        <div className={style}>{content.hide}<br/>{content.hide2}</div>
       </div>
     </div>
   );
