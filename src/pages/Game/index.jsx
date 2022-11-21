@@ -5,8 +5,8 @@ import { words } from "../../assets/words";
 import { useEffect, useState } from "react";
 import Xp from "../../components/Xp";
 import Question from "../../components/Question";
-
-
+import Cronometro from "../../components/Cronometro";
+import { MudaEstado } from "../../components/Card";
 
 import { GamificationContext } from "../../contexts/Gamification";
 import { useContext } from 'react';
@@ -31,12 +31,11 @@ export default function Game() {
     <div id="tela">
       <div id="container-topo">
         <div className="titulo">4LearnEnglish</div>
-        <Xp total={80} />
+        <div className="Xp" ><Xp total={80} /></div>
       </div>
+      
+      <div className="caixa-question"><Question/><Cronometro /></div>
 
-
-      <Question/>
-  
       <div id="caixa-cards">
         {cards.map((word, idx) => (
           <Card key={idx} content={word} />
@@ -48,6 +47,7 @@ export default function Game() {
           className="Ranking"
           onClick={() => {
             zeroXP()
+            MudaEstado()
             navigate("/ranking");
           }}
         >

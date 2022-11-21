@@ -1,9 +1,9 @@
 .card {
     position: relative;
-    width: 200px;
-    height: 100px;
-    margin: 10px;
-    perspective: 400px;
+    width: 300px;
+    height: 130px;
+    margin: 5px;
+    perspective: 300px;
 }
 
 .content {
@@ -23,11 +23,13 @@
 
 .front,
 .backfalse, .backtrue {
+    display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
     background: white;
-    line-height: 100px;
     color: #5271ff;
     text-align: center;
     font-size: 30px;

@@ -1,8 +1,8 @@
 import React, { createContext, useState, useEffect } from "react";
+import { XP_MOVE } from "../components/Card";
 
 const GamificationContext = createContext({});
 
-const XP_MOVE = 10
 const GamificationProvider = ({ children }) => {
 
     let [xp, setXP] = useState(0);
@@ -11,8 +11,6 @@ const GamificationProvider = ({ children }) => {
     useEffect(() => {
 
     }, []);
-
-
 
     const increaseXP = () => {
         setXP(xp + XP_MOVE);

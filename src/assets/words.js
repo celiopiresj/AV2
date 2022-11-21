@@ -1,11 +1,11 @@
 export let words = [
     {
-        open: 'another',
+        open: 'Another',
         hide: 'outra',
         ask: 'Yes, do you have this in __________ color?'
     },
     {
-        open: 'how much',
+        open: 'How much',
         hide: 'quanto',
         ask: 'Can you tell me __________ this is.'
     },
@@ -25,7 +25,7 @@ export let words = [
         ask: '__________, I’m just browsing'
     },
     {
-        open: 'help',
+        open: 'Help',
         hide: 'Ajudar',
         ask: 'Can I __________ you?'
     },
