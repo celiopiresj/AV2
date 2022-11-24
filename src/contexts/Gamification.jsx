@@ -7,20 +7,17 @@ const GamificationProvider = ({ children }) => {
 
     let [xp, setXP] = useState(0);
 
-
     useEffect(() => {
 
     }, []);
 
     const increaseXP = () => {
-        setXP(xp + XP_MOVE);
+        setXP(XP_MOVE);
     };
 
     const zeroXP = () => {
-        setXP(xp = 0);
+        setXP(0);
     };
-
-
 
     return (
         <GamificationContext.Provider value={{ xp, increaseXP, zeroXP }}>

@@ -1,16 +1,12 @@
 import Card from "../../components/Card";
 import "./style.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { words } from "../../assets/words";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext  } from "react";
 import Xp from "../../components/Xp";
 import Question from "../../components/Question";
 import Cronometro from "../../components/Cronometro";
-import { MudaEstado } from "../../components/Card";
-import { XP_MOVE } from "../../components/Card";
-
 import { GamificationContext } from "../../contexts/Gamification";
-import { useContext } from 'react';
 
 
 const TOTAL_CARDS = 6;
@@ -48,8 +44,6 @@ export default function Game() {
           className="Ranking"
           onClick={() => {
             zeroXP()
-            MudaEstado()
-            {console.log(XP_MOVE)}
             navigate("/ranking");
           }}
         >

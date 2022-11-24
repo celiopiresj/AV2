@@ -5,8 +5,9 @@ import {
     getAuth,
     onAuthStateChanged,
     signInWithEmailAndPassword,
-    signOut as signOutFirebase
+    signOut as signOutFirebase,
 } from 'firebase/auth'
+
 import { useEffect } from 'react';
 
 const UsuarioContext = createContext({})

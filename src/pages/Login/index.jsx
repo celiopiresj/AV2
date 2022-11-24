@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
 import "./style.css";
 import { UsuarioContext } from "../../contexts/User";
 

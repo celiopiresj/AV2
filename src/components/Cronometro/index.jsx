@@ -24,8 +24,6 @@ const Cronometro = () => {
     let { total, hours, minutes, seconds } = getTimeRemaining(e);
     if (total >= 0) {
       setTimer(seconds > 9 ? seconds : "0" + seconds);
-
-      Relogio = seconds;
     }
   };
 
@@ -54,7 +52,13 @@ const Cronometro = () => {
     clearTimer(getDeadTime());
   };
 
-  return <div className="Cronometro">{timer}</div>;
+  Relogio = timer
+
+  return (
+    <div className="Cronometro">
+      {timer}
+    </div>
+  );
 };
 
 export default Cronometro;
